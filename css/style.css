@@ -1,213 +1,272 @@
+/*resets*/
 *{
-margin:0;
-padding: 0;
-box-sizing: border-box;
-font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-html,body{
-    height:100%
-}
-body{
-overflow-x: hidden;
+a{
+    text-decoration: none;
 }
 .container{
-padding:0 2%;
-margin: 0 auto;
-max-width: 1280px;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
 }
-
+/*===============================*/
+/*Header*/
 header .container{
-display:flex;
-justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
-
+header{
+    background-color: rgb(255, 245, 255);
+    padding:30px 0;
+}
 .logo{
-background-image: url(../images/logo_mulher_bonita.svg);
-background-repeat: no-repeat;
-width:170px;
-height:170px
+    background-image: url(../image/logo_mulher_bonita.svg);
+    width: 180px;
+    height: 100px;
+    background-size: 100% 100%;
 }
-header nav ul{
-display:flex;
-flex-wrap: wrap;
-list-style-type: none;
-position:relative;
-top:20px;
+#nav #menu{
+    list-style: none;
+    display: flex;
 }
-header nav li{
-padding-left:25px;
-font-size:23px;
+#menu li{
+    padding:0 20px;
+    font-size: 23px;
 }
-
-header nav a{
-    text-decoration:none;
-    color:#ab446e;
-font-weight:400;
+#menu a{
+    color:rgb(228, 85, 113)
 }
-section.slider{
-    background-color: #fce1ef;
+#menu li:hover{
+    color:rgb(241, 221, 229);
 }
-section.slider {
-display:flex;
-height:500px;
-flex-wrap: wrap;
+#btn{
+    display: none;
 }
-section.slider .img{
-    width:100%;
-background-image: url(../images/banner.png);
-background-position: center;
-background-size: 100%  100%;
-padding-top: 37%;
-background-repeat: no-repeat;
-position: absolute;
-z-index:1;
-}
-
-section.slider h2{
-    position: relative;
-    top:150px;
-    left:100px;
-    font-size:47px;
-    color:white;
-    z-index:2;
-}
-
-h2 span{
-color:#ab446e;
-}
-
-section.sobre {
-padding:30px  2%;
-background-color: #fce1ef;
-width:100%;
-}
-section.sobre  h2{
-    font-size:27px;
-    font-weight:300;
-    text-align: center;
-    color:#ab446e;
-}
-
-.perfil-img-wrapper{
-display:flex;
-margin:30px 0;
-justify-content: space-between;
-}
-.perfil-img{
-width:33%;
-padding-top:40%;
-background-size:100% 100%
-}
-.imgp1{
-    background-image: url(../images/Jennie.jpg);
-}
-.imgp2{
-    background-image: url(../images/Bethania.jpg);
-}
-.perfil-img-wrapper p{
-width:65%;
-padding:20px;
-}
-.perfil-2 .perfil-img{
-order:2;
-}
-section.produtos .container{
+/*============================*/
+/*section destaque*/
+section.destaques.container{
     display:flex;
-flex-wrap: wrap;
-justify-content: center;
-align-items: center;}
-section.produtos{
-padding:30px 2%;
-background-color:#fce1ef;
-text-align: center;
-width:100
+    flex-wrap:wrap;
+
+}
+section.destaque{
+    margin-top: 0;
+    width: 100%;
+    display: flex;
+    place-items: center;
+    align-items: center;
+    background-image: url(../image/B&J.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    }
+section.destaque h2{
+    font-size: 55px;
+    margin:0 auto;
+    margin-left: 40px;
+    color:white;
+}
+section.destaque h2 span{
+    color: rgb(255, 0, 255);
 }
 
-section.produtos  h2{
-    font-size:27px;
-    font-weight:300;
-    color:#ab446e;
+section.destaque a{
+    display: block;
+    width: 100%;
+    font-size: 25px;
+    height:70px;
+    color:white;
+    border-radius: 12px;
+    padding: 15px;
+    margin:30px auto;
+    max-width: 300px;
+    text-align: center;
+    transition: .4s;
+    border:3px solid rgb(255, 0, 255)
 }
-
-.produto-wraper{
-    width:calc(100% / 5);
-margin:30px 10px;
+section.destaque a:hover{
+    color:rgb(255, 0, 255);
+    background-color:rgb(255, 255, 255)
 }
-
-.produto-wraper .produtoimage{
+/*produto destaqe*/
+section.produto-destaque .container{
+    display:flex;
+    flex-wrap: wrap;
+}
+section.produto-destaque {
+    width: 100%;
+    padding: 30px 0;
+    background-color: rgb(250, 133, 240);
+}
+section.produto-destaque > h2{
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+.produto-destaque-wrapper{
+    width: calc(25% - 15px);
+    /*max-width: 250px;*/
+    background-color: seashell;
+    margin: 0 5px;
+    border-radius: 12px;
+    text-align: center;
+    /*padding: 10px;*/
+}
+.img-p{
 width: 100%;
-height:200px;
-background-color: black;
+background-size: center;
+background-repeat: no-repeat;
+background-size: 100% 100%;
+height: 300px;
+}
+.destaque1{
+background-image: url(../image/colar-e-pulseira.jpg);
+}
+.destaque2{
+    background-image: url(../image/colar.jpg);
+    }
+    .destaque3{
+background-image: url(../image/esponja.jpg);
+    }
+    .destaque4{
+        background-image: url(../image/esponja.jpg);
+            }
+
+/*=================*/
+/*Sobre*/
+section.sobre .container{
+display: flex;
+flex-wrap: wrap;
+}
+section.sobre{
+    padding: 30px 0;;
+width: 100%;
+background-color: rgb(252, 213, 250);
+}
+section.sobre > h2{
+font-size: 30px;
+text-align: center;
+color: white;
+}
+.sobre-wrapper{
+    display: flex;
+    padding:20px 0;
+}
+.sobre-wrapper img{
+width:100%;
+max-width: 500px;
+}
+.sobre-wrapper .sobre-texto{
+width: 100%;
+margin: 0 20px;
+}
+img.p2{
+order:2
+}
+.p2{
+order:1;
 }
 
 footer{
-padding:30px  0;
-background-color: rgb(214, 30, 131);
+width: 100%;
+background-color: rgb(92, 7, 92);
 text-align: center;
+padding: 30px 0;
 }
-
 footer p{
-    font-size: 18px;
-    color:white
+color:white;
 }
-
-/*=======Media queries*/
-/*@media screen and (max-width:1920px) {
-section.slider .img{
-    padding-top:27%;
-    width:100%;
-    background-position: center;
-    background-size: 100%  100%;
-    background-repeat: no-repeat;
-    position: absolute;
-    z-index:1;
-}
-}*/
+/*Media*/
 @media screen and (max-width:768px) {
-
-    section.slider h2{
-        top: 60px;
-        left: 80px;
-        font-size: 30px;
-
+    #nav #menu{
+        display:none;
     }
-   section.slider {
-        height: 250px;
-}
-.perfil-img {
+#nav.active #menu{
+    display: block;
     width: 100%;
-/*padding-top: 40%;*/}
-
-.produtos{
-text-align:center
+    text-align: center;
+    position: absolute;
+    right: 0;
+    top: 150px;
+    background-color:violet;
+    transition: .3s;
 }
-.produto-wraper{
-    width:calc(100% / 4);
+#nav.active  li:hover{
+    display: block;
+    /*padding: 1rem 0;*/
+    background-color: rgb(242, 216, 250);
 }
-
+#btn{
+    display: flex;
+    padding: 1rem;
+    z-index: 999;
+    background: none;
+    border: none;
 }
+#hamburger{
+    border-top: 2px solid;
+    display: block;
+    color: rgb(248, 160, 241);
 
-@media screen and (max-width:468px){
-    section.slider {
-        height: 150px;
     }
-    section.slider h2 {
-        top: 30px;
-        left: 40px;
+    #hamburger::after,#hamburger::before{
+        content: "";
+        display: block;
+        width:30px;
+        height: 2px;
+        margin-top: 5px;
+        background-color: currentColor;
+        transition: .3s;
+        position: relative;
+        }
+    #nav.active #hamburger{
+        border-top: transparent;
+    }
+
+    #nav.active #hamburger::before{
+      transform: rotate(135deg);
+
+    }
+    #nav.active #hamburger::after{
+      transform: rotate(-135deg);
+      top:-7px;
+      }
+      .produto-destaque-wrapper{
+          width:calc(50% - 10px);
+          margin:20px 5px;
+      }
+      .sobre-wrapper{
+      flex-wrap: wrap;
+      }
+      img.p2{
+        order:1
+        }
+        .p2{
+        order:2;
+        }
+}
+@media  screen  and (max-width: 600px) {
+    section.destaque{
+        height: 400px;
+    }
+    section.destaque h2{
+        font-size: 30px;
+    }
+    section.destaque a{
         font-size: 20px;
+        height:30px;
+        padding:0 10px;
     }
-    .perfil-img {
-        width: 35%;
-        padding-top: 40%;}
-
-    .produto-wraper{
+    .produto-destaque-wrapper{
         width:100%;
+        margin:20px 5px;
     }
-}
-
-@media screen and (max-width:300px) {
-    .perfil-img {
-        width: 100%;
-        padding-top: 50%;}
-
 }
