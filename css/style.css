@@ -82,11 +82,10 @@ section.destaque a{
     display: block;
     width: 100%;
     font-size: 25px;
-    height:70px;
     color:white;
     border-radius: 12px;
     padding: 20px;
-    margin:30px auto;
+    margin:40px auto;
     max-width: 300px;
     text-align: center;
     transition: .4s;
