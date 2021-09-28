@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
 }
 a{
     text-decoration: none;
@@ -42,8 +43,8 @@ header{
 #menu a{
     color:rgb(228, 85, 113)
 }
-#menu li:hover{
-    color:rgb(241, 221, 229);
+#menu a:hover{
+  border-bottom: 4px solid rgb(243, 61, 216);
 }
 #btn{
     display: none;
@@ -120,6 +121,25 @@ section.produto-destaque > h2{
     text-align: center;
     /*padding: 10px;*/
 }
+.produto-destaque-wrapper a{
+border-radius: 12px;
+border:2px solid rgb(236, 56, 197);
+background-color: purple;
+color: white;
+padding:12px;
+transition: .2s;
+}
+.produto-destaque-wrapper a:hover{
+    background-color:white ;
+    color: purple
+}
+.produto-destaque-wrapper  p{
+    margin: 20px;
+
+}
+.produto-destaque-wrapper  p  a{
+margin: 20px;
+}
 .img-p{
 width: 100%;
 background-size: center;
@@ -134,7 +154,7 @@ background-image: url(../image/colar-e-pulseira.jpg);
     background-image: url(../image/colar.jpg);
     }
     .destaque3{
-background-image: url(../image/esponja.jpg);
+background-image: url(../image/batom.jpg);
     }
     .destaque4{
         background-image: url(../image/esponja.jpg);
@@ -154,7 +174,7 @@ background-color: rgb(252, 213, 250);
 section.sobre > h2{
 font-size: 30px;
 text-align: center;
-color: white;
+color: rgb(255, 255, 255);
 }
 .sobre-wrapper{
     display: flex;
@@ -175,15 +195,50 @@ order:2
 order:1;
 }
 
+section.redes-sociais .container{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+
+}
+section.redes-sociais{
+    text-align: center;
+    width: 100%;
+    padding: 30px  0;
+background-color: rgba(255, 192, 255, 0.87);
+}
+section.redes-sociais  h2{
+    font-size: 30px;
+display: block;
+
+   color:rgb(187, 30, 187)
+}
+.redes-sociais-wrapper{
+width: 28.3%;
+padding: 15px;
+margin: 20px;
+
+}
+
+.redes-sociais-wrapper  a > svg{
+height:35px ;
+}
+.redes-sociais-wrapper  a  span{
+position: relative;
+color: purple;
+font-size: 20px;
+top:-12px;
+margin:10px
+}
 footer{
-width: 100%;
-background-color: rgb(92, 7, 92);
-text-align: center;
-padding: 30px 0;
-}
-footer p{
-color:white;
-}
+    width: 100%;
+    background-color: rgb(92, 7, 92);
+    text-align: center;
+    padding: 30px 0;
+    }
+    footer p{
+    color:white;
+    }
 /*Media*/
 @media screen and (max-width:768px) {
     #nav #menu{
@@ -268,5 +323,8 @@ color:white;
     .produto-destaque-wrapper{
         width:100%;
         margin:20px 5px;
+    }
+    .redes-sociais-wrapper{
+        width:100%
     }
 }
