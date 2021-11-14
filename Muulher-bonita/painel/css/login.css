@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:rgb(133, 10, 167);
+}
+
+.login{
+display: flex;
+}
+.painel-login{
+background-image:linear-gradient(100deg,#fff,rgb(194, 18, 238));
+width:95%;
+top:50%;
+border-radius: 10px;
+box-shadow: 10px 20px 15px navy;
+position: absolute;
+left:50%;
+justify-content: space-between;
+align-items: center;
+transform: translate(-50%,-50%);
+padding: 30px;
+max-width: 700px;
+}
+.painel-login h2{
+font-size: 30px;
+color: white;
+margin-bottom: 15px;
+text-align: center;
+}
+.painel-login input[type="text"],
+.painel-login input[type="password"]{
+    width: 100%;
+    max-width: 600px;
+border-radius: 10px;
+padding-left: 30px;
+height: 40px;
+margin:10px;
+}
+.lembrar{
+justify-content:space-between;
+display: flex;
+margin-top:30px
+}
+.lembrar2 {
+    margin-top: 30px;
+    color:white;
+    margin-right: 40px;
+}
+.lembrar2 label{
+margin-right: 10px;
+}
+.painel-login input[type="submit"]{
+    width: 100px;
+    height: 47px;
+    background-image: linear-gradient(100deg,#fff,rgb(20, 245, 95));
+    border:none;
+    color: white;
+    border-radius: 10px;
+    margin:10px;
+    cursor: pointer;
+    transition: 2s;
+}
+.painel-login input[type="submit"]:hover{
+    background-image: linear-gradient(100deg,rgb(20, 245, 170),rgb(126, 217, 253));
+}
+
+.input-icon i{
+    position: absolute;
+    text-align: center;
+    border-radius: 10px;
+    margin: 15px;
+    width: 40px;
+    }
+.icon1 i{
+    margin: 9px 10px 0px;
+}
+.icon2 i{
+    margin: 21px 10px 0;
+    color: rgba(247, 9, 247, 0.863);
+
+}
+
+    .icon {
+    padding: 12px;
+    color: rgb(250, 81, 250);
+    }
